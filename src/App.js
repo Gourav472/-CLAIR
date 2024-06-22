@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import Herosection from './components/Herosection';
+import About from './components/About';
+import Address from './components/Address';
+import Tokenmics from './components/Tokenmics';
+import Secure from './components/Secure';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Faq from './components/Faq';
+import Footer from './components/Footer';
+import Social from './components/Social';
+import Roadmap from './components/Roadmap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' overflow-hidden'>
+      <Herosection />
+      <About />
+      <Address />
+      <Tokenmics />
+      <Secure />
+      <Roadmap/>
+      <Faq />
+      <Social />
+      <Footer />
     </div>
   );
 }
