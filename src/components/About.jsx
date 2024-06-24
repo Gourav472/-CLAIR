@@ -3,9 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Common from '../common/Common'
 import clock from '../assets/images/svg/solid.svg'
 import dots from '../assets/images/svg/dots.svg'
-import whiteline from '../assets/images/line.png'
 import alien from '../assets/images/alien.webp'
-
+import yline from '../assets/images/svg/y1.svg'
+import yline1 from '../assets/images/svg/y2.svg'
 const About = () => {
     const initialTime = { days: 0, hours: 12, minutes: 46, seconds: 19 };
     const [time, setTime] = useState(initialTime);
@@ -56,7 +56,7 @@ const About = () => {
             <section className=' bg-black about-mt position-relative' id='About'>
                 <Container>
                     <div className=' d-flex flex-column align-items-center'>
-                        <div className=' about-box z-0 gradient-border w-100 'data-aos="fade-up">
+                        <div className=' about-box z-0 gradient-border w-100 ' data-aos="fade-up">
                             <Row className=' position-relative z-2'>
                                 <Col lg={5} className=' d-flex justify-content-center justify-content-lg-start'>
                                     <div className='d-flex flex-column'>
@@ -145,16 +145,20 @@ const About = () => {
                                 <Col lg={7} className=' d-flex  mt-4 mt-md-5 mt-lg-0 ' >
                                     <div className=' d-flex align-items-center align-items-lg-end flex-column w-100'>
                                         <div className=' d-flex justify-content-between w-100 align-items-center max-404'>
-                                            <div className=' d-flex flex-column'>
+                                            <div className=' d-flex flex-column  ps-sm-3'>
                                                 <p className=' mb-0 manrope fw-400 text-16 lh-24 links'>Tokens are Sold</p>
                                                 <p className=' mb-0 manrope fw-400 text-16 lh-24 yellow pt-1'>98,212,738</p>
                                             </div>
-                                            <div className=' d-flex flex-column'>
+                                            <div className=' d-flex flex-column  pe-4'>
                                                 <p className=' mb-0 manrope fw-400 text-16 lh-24 links'>Tokens Remaining</p>
                                                 <p className=' mb-0 manrope fw-400 text-16 lh-24 yellow pt-1'>80,212,738</p>
                                             </div>
                                         </div>
-                                        <img className=' pt-17 w-100 max-404' src={whiteline} alt="" />
+                                        <div className=' position-relative w-100 max-404'>
+                                            <input type="range" name="range-input" />
+                                            <img className='y-line1 position-absolute' src={yline} alt="yellow-line" />
+                                            <img className='y-line2 position-absolute' src={yline1} alt="white-line" />
+                                        </div>
                                         <p className=' mb-0 grey manrope fw-400 text-14 lh-21 pt-purchase-text'>Purchase $Clair fast until the price increase.</p>
                                         <div className=' d-flex align-items-center flex-wrap justify-content-center gap-time pt-17 '>
                                             <div className=' d-flex align-items-center gap-10'>
@@ -198,10 +202,10 @@ const About = () => {
                         <div className=' position-relative '>
                             <h2 className='  mb-0 manrope fw-600 text-48 lh-57 text-center white pt-about-text' data-aos="zoom-in">About <span className=' yellow fw-700'>$CLAIR</span></h2>
                             <div className=' d-flex align-items-center flex-column gap-about-clair '>
-                                <p className='z-2 max-776 text-center pt-3 manrope fw-400 text-16 lh-24 grey mb-0'data-aos="fade-right">As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</p>
-                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0'data-aos="fade-left">In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to confront challenges is with a good laugh.</p>
-                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0'data-aos="fade-right">In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to act.</p>
-                                <div className='z-2 py-about-btn max-135 d-flex justify-content-center'data-aos="fade-left">
+                                <p className='z-2 max-776 text-center pt-3 manrope fw-400 text-16 lh-24 grey mb-0' data-aos="fade-right">As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</p>
+                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0' data-aos="fade-left">In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to confront challenges is with a good laugh.</p>
+                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0' data-aos="fade-right">In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to act.</p>
+                                <div className='z-2 py-about-btn max-135 d-flex justify-content-center' data-aos="fade-left">
                                     <Common name="Learn More" />
                                 </div>
                             </div>

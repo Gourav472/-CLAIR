@@ -46,10 +46,13 @@
   --white2: #f1f1f1;
   --social1: rgba(255, 246, 36, 0.27);
   --social2:rgba(255, 246, 36, 0);
-
+--range1:#434343;
 }
 
 /* //////////COLORS//////////// */
+.range1{
+  color: var(--range1);
+}
 .social1{
   color: var(--social1);
 }
