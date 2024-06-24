@@ -24,10 +24,10 @@ const Address = () => {
             <section className='address-bg mt-decrease position-relative' id='cookie'>
                 <Container>
                     <div className='d-flex flex-column align-items-center py-address'>
-                        <h2 className='mb-0 manrope fw-600 text-48 lh-57 text-center white'>
+                        <h2 className='mb-0 manrope fw-600 text-48 lh-57 text-center white'data-aos="fade-up">
                             <span className='yellow'>$CLAIR</span> Smart Contract Address
                         </h2>
-                        <div className='w-100 copy-box d-flex justify-content-between mt-4'>
+                        <div className='w-100 copy-box d-flex justify-content-between mt-4'data-aos="fade-up">
                             <input
                                 className='w-100 input-copy manrope fw-400 text-16 lh-24 links'
                                 type="text"
@@ -39,7 +39,7 @@ const Address = () => {
                                 <Common name={buttonText} />
                             </div>
                         </div>
-                        <p className='max-806 pt-32 manrope fw-400 text-16 lh-24 text-center mb-0 grey'>
+                        <p className='max-806 pt-32 manrope fw-400 text-16 lh-24 text-center mb-0 grey'data-aos="fade-up">
                             Built on the Ethereum blockchain and powered by the most advanced AI technology, Baby Sinclair has the potential to make millions in both early stages and long-term investment. Our strategic burn system, which will burn millions of $CLAIR quarterly, aims to increase its value significantly. Don't miss out! Get in early and secure your chance to become the next millionaire.
                         </p>
                     </div>

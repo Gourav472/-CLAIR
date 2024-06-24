@@ -13,8 +13,19 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 import Social from './components/Social';
 import Roadmap from './components/Roadmap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 2000,
+      easing: "ease-in-out",
+    });
+
+  }, [])
   return (
     <div className=' overflow-hidden'>
       <Herosection />
@@ -22,7 +33,7 @@ function App() {
       <Address />
       <Tokenmics />
       <Secure />
-      <Roadmap/>
+      <Roadmap />
       <Faq />
       <Social />
       <Footer />

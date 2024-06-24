@@ -56,7 +56,7 @@ const About = () => {
             <section className=' bg-black about-mt position-relative' id='About'>
                 <Container>
                     <div className=' d-flex flex-column align-items-center'>
-                        <div className=' about-box z-0 gradient-border w-100 '>
+                        <div className=' about-box z-0 gradient-border w-100 'data-aos="fade-up">
                             <Row className=' position-relative z-2'>
                                 <Col lg={5} className=' d-flex justify-content-center justify-content-lg-start'>
                                     <div className='d-flex flex-column'>
@@ -196,12 +196,12 @@ const About = () => {
                             </Row>
                         </div>
                         <div className=' position-relative '>
-                            <h2 className='  mb-0 manrope fw-600 text-48 lh-57 text-center white pt-about-text'>About <span className=' yellow fw-700'>$CLAIR</span></h2>
+                            <h2 className='  mb-0 manrope fw-600 text-48 lh-57 text-center white pt-about-text' data-aos="zoom-in">About <span className=' yellow fw-700'>$CLAIR</span></h2>
                             <div className=' d-flex align-items-center flex-column gap-about-clair '>
-                                <p className='z-2 max-776 text-center pt-3 manrope fw-400 text-16 lh-24 grey mb-0'>As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</p>
-                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0'>In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to confront challenges is with a good laugh.</p>
-                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0'>In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to act.</p>
-                                <div className='z-2 py-about-btn max-135 d-flex justify-content-center'>
+                                <p className='z-2 max-776 text-center pt-3 manrope fw-400 text-16 lh-24 grey mb-0'data-aos="fade-right">As you navigate through the avatars, you'll find each one has a unique voice, bringing laughter and a touch of sarcasm to the otherwise serious discussions in the crypto space.</p>
+                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0'data-aos="fade-left">In a landscape where tensions can run high, Baby Sinclair’s memes serve as a reminder that, sometimes, the best way to confront challenges is with a good laugh.</p>
+                                <p className='z-2 max-776 text-center manrope fw-400 text-16 lh-24 grey mb-0'data-aos="fade-right">In this meme-driven world, laughter is not just a reaction; it's a powerful tool for change, and Baby Sinclair is wielding it with style. The bad players better watch out; the crypto defender is here, armed with memes and ready to act.</p>
+                                <div className='z-2 py-about-btn max-135 d-flex justify-content-center'data-aos="fade-left">
                                     <Common name="Learn More" />
                                 </div>
                             </div>
