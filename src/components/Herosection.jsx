@@ -33,7 +33,7 @@ const Herosection = () => {
                 <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  中国人 ldsafjk
+                  中国人
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
